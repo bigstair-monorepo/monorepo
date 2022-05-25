@@ -1,21 +1,22 @@
-name: Release
+name: Prettier
 
 on:
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
-  release:
-    name: Release
+  prettier:
+    name: Prettier
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
 
       - name: Setup Node.js 16.x
         uses: actions/setup-node@v2
@@ -25,11 +26,5 @@ jobs:
       - name: Install Dependencies
         run: yarn install
 
-      - name: Create Release Pull Request or Publish to npm
-        id: changesets
-        uses: changesets/action@v1
-        with:
-          publish: yarn release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Prettier
+        run: yarn format
