@@ -7,5 +7,5 @@
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["@bigstair/docs"]
+  "ignore": ["app-vite-js", "app-vite-ts", "@bigstair/docs"]
 }

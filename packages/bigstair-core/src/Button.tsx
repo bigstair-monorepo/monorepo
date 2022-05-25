@@ -14,7 +14,7 @@ export function Button({ children, ...props }: ButtonProps) {
   // }
 
   return (
-    <button style={{ padding: '16px' }} {...props}>
+    <button style={{ padding: '32px' }} {...props}>
       {children}
     </button>
   );
