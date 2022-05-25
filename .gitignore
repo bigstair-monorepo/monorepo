@@ -1,0 +1,17 @@
+.DS_Store
+node_modules
+.turbo
+*.log
+.next
+dist
+dist-ssr
+*.local
+.env
+.cache
+server/dist
+public/dist
+.turbo
+storybook-static/
+
+apps/app-vite-js
+apps/app-vite-ts
