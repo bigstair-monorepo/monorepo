@@ -1,5 +1,11 @@
 # @bigstair/core
 
+## 1.0.2
+
+### Patch Changes
+
+- 14afb3c: Button back to 16px
+
 ## 1.0.1
 
 ### Patch Changes
