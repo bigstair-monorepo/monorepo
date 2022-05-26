@@ -1,5 +1,11 @@
 # @bigstair/core
 
+## 1.0.6
+
+### Patch Changes
+
+- e0f84be: Button: 8px again
+
 ## 1.0.5
 
 ### Patch Changes
