@@ -1,5 +1,11 @@
 # @bigstair/core
 
+## 1.0.5
+
+### Patch Changes
+
+- Button: padding is 8px
+
 ## 1.0.4
 
 ### Patch Changes
