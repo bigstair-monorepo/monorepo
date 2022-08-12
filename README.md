@@ -127,7 +127,7 @@ For example, here's the included Story for our `Button` component:
 
 ```js:apps/docs/stories/button.stories.mdx
 import { Button } from '@bigstair-core/src';
-import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs';
 
 <Meta title="Components/Button" component={Button} />
 
